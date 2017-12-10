@@ -1,5 +1,28 @@
+<!-- https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/A_first_splash -->
+
 <script type="text/javascript">
 
-  // Your javascript goes here
+  var randomNumber = Math.floor(Math.Random() * 100) + 1;
+
+  var guesses = document.querySelector('.guesses');
+  var lastResult = document.querySelector('.lastResult');
+  var lowOrHi = doucment.querySelector('.lowOrHi');
+
+  var guessSubmit = document.querySelector('.guessSubmit');
+  var guessField = document.querySelector('.guessField');
+
+  var guessCount = 1;
+  var resetButton;
+
+  function checkGuess() {
+    alert('I am a placeholder');
+  }
 
 </script>
+
+<p class="guesses"></p>
+<p class="lastResult"></p>
+<p class="lowOrHi"></p>
+
+<label for="guessField">Enter a guess: </label><input type="text" id="guessField" class="guessField">
+<input type="submit" name="" value="Submit guess" class="guessSubmit">
